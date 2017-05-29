@@ -1,0 +1,32 @@
+<ion-header>
+	<ion-navbar color="danger">
+		<ion-title>
+			Testing
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+
+		<ion-item>
+			<ion-label floating>Username</ion-label>
+			<ion-input type="text" [(ngModel)]="name"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>E-mail</ion-label>
+			<ion-input type="text" [(ngModel)]="email"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password" [(ngModel)]="passwo"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<button ion-button color="buttons" (click)='check()'> Continue </button>
+		</ion-item>
+
+	</ion-list>
+</ion-content>
